@@ -1,11 +1,12 @@
 def square_array(numbers)
-  count = 0
-  while count < numbers.length 
-    numbers.index ** 2 
-    count += 1
-  end
-  square_array(numbers)
-end 
+  new_array = []
+  counter = 0 
+  while counter < numbers.length()
+  new_array.push(numbers[counter] * numbers[counter])
+  counter += 1
+  end 
+  return new_array
+end
  
 
 
